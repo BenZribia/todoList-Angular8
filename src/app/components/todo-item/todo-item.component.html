@@ -1,0 +1,12 @@
+    <div >
+     <p>
+      <input type="checkbox" class="mag mt-3" (change)="onToggle(todo)"
+         id="{{ todo.id }}"
+         [checked]="todo.completed" />
+      <label [ngClass]="setClasses()" for="{{ todo.id }}" > {{ todo.title }}</label>
+      <button class="btn btn-danger float float-right" (click)="onDelete(todo)">del</button>
+    </p>
+    </div>
+
+
+
